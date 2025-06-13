@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "type": "Credit",
+    "amount": 14.06,
+    "name": "Apple",
+    "description": "Card Number Used",
+    "date": "2023-10-03T10:00:00Z",
+    "pending": true,
+    "authorizedUser": "Diana"
+  },
+  {
+    "id": "2",
+    "type": "Payment",
+    "amount": 174.00,
+    "name": "Payment",
+    "description": "From JPMorgan Chase Bank National Association",
+    "date": "2023-10-03T09:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "3",
+    "type": "Credit",
+    "amount": 3.24,
+    "name": "Apple",
+    "description": "Card Number Used",
+    "date": "2023-10-02T15:00:00Z",
+    "pending": false,
+    "authorizedUser": "Diana"
+  },
+  {
+    "id": "4",
+    "type": "Payment",
+    "amount": 99.71,
+    "name": "Payment",
+    "description": "From JPMorgan Chase Bank National Association",
+    "date": "2023-09-30T12:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "5",
+    "type": "Payment",
+    "amount": 73.58,
+    "name": "Payment",
+    "description": "From JPMorgan Chase Bank National Association",
+    "date": "2023-09-25T12:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "6",
+    "type": "Credit",
+    "amount": 21.61,
+    "name": "IKEA",
+    "description": "Round Rock, TX",
+    "date": "2022-10-01T12:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "7",
+    "type": "Credit",
+    "amount": 73.58,
+    "name": "Target",
+    "description": "Cedar Park, TX",
+    "date": "2022-09-30T12:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "8",
+    "type": "Credit",
+    "amount": 8.99,
+    "name": "Starbucks",
+    "description": "Coffee Shop",
+    "date": "2022-09-29T08:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "9",
+    "type": "Credit",
+    "amount": 120.00,
+    "name": "Amazon",
+    "description": "Online Shopping",
+    "date": "2022-09-28T18:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  },
+  {
+    "id": "10",
+    "type": "Credit",
+    "amount": 45.00,
+    "name": "Uber",
+    "description": "Ride to Airport",
+    "date": "2022-09-27T07:00:00Z",
+    "pending": false,
+    "authorizedUser": null
+  }
+] 
