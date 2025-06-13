@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CardBalance from './components/CardBalance';
 import NoPaymentDue from './components/NoPaymentDue';
 import DailyPoints from './components/DailyPoints';
