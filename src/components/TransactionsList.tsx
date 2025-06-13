@@ -39,31 +39,34 @@ const TransactionsList: React.FC<{ onSelect: (tx: Transaction) => void }> = ({ o
   }, []);
 
   return (
-    <div style={{
-      background: '#ffffff',
-      borderRadius: 16,
-      padding: 20,
-      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-      border: '1px solid #e9ecef'
-    }}>
+    <div>
       <h2 style={{ 
         fontWeight: 700, 
         fontSize: 20, 
-        margin: '0 0 16px 0',
+        margin: '0 0 12px 0',
         color: '#212529'
       }}>Latest Transactions</h2>
-      <div>
-        {transactions.map(tx => (
+      <div style={{
+        background: '#ffffff',
+        borderRadius: 16,
+        padding: "0 20px",
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        border: '1px solid #e9ecef',
+        overflow: 'hidden'
+      }}>
+        <div>
+          {transactions.map(tx => (
           <div
             key={tx.id}
             onClick={() => onSelect(tx)}
             style={{
               display: 'flex',
               alignItems: 'center',
-              padding: '16px 0',
-              borderBottom: '1px solid #f1f3f4',
+              padding: '16px 20px',
+              margin: '0 -20px',
               cursor: 'pointer',
               transition: 'background-color 0.2s',
+              position: 'relative',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = '#f8f9fa';
@@ -118,8 +121,18 @@ const TransactionsList: React.FC<{ onSelect: (tx: Transaction) => void }> = ({ o
                 {tx.description} – {formatTransactionDate(tx.date)}
               </div>
             </div>
+            {/* Border line that starts from icon position */}
+            <div style={{
+              position: 'absolute',
+              bottom: 0,
+              left: '20px', // Start from where icon starts (container padding)
+              right: '20px', // End at container padding
+              height: '1px',
+              backgroundColor: '#f1f3f4'
+            }}></div>
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
